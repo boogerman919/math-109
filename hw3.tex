@@ -144,7 +144,7 @@ Let $n$ be an integer. We will show that $n^2 + 3n + 1$ is odd.
     n^2 + 3n + 1 = n(n + 3) + 1
 \end{gather}
 From HW3 Fact 3, we know that all integers are even or odd. Thus, we can split $n(n + 3) + 1$ into $2$ cases, $n$ is even and $n$ is odd. \\
-If $n$ is even, let $n$ be $2k$ for some integer $k$.
+If $n$ is even, let $n$ be $2k$ for some integer $k$ by HW3 Fact 1.
 \begin{align}
     n(n + 3) + 1 &= 2k(2k + 3) + 1 \\
     &= 2(2k^2 + 3k) + 1
@@ -153,8 +153,8 @@ Let $2k^2 + 3k$ be some integer $l$.
 \begin{align}
     2(2k^2 + 3k) + 1 &= 2l + 1
 \end{align}
-Therefore, if $n$ is even, $n^2 + 3n + 1$ is odd by HW3 fact 2.
-If $n$ is odd, let $n$ be $2k + 1$ for some integer $k$.
+Therefore, if $n$ is even, $n^2 + 3n + 1$ is odd by HW3 Fact 2.
+If $n$ is odd, let $n$ be $2k + 1$ for some integer $k$ by HW3 Fact 2.
 \begin{align}
     n(n + 3) + 1 &= (2k + 1)(2k + 4) + 1 \\
     &= 2(2k + 1)(k + 1) + 1
@@ -173,7 +173,7 @@ Thus, for all integer $n$, $n^2 + 3n + 1$ is odd.
 \end{prop}
 \begin{proof}
 Let $a, b$ be some integers. We will show that if $a + b$ is even, then $a - b$ is even. \\
-Let $a + b$ be $2k$ for some integer $k$.
+By HW3 Fact 1, let $a + b$ be an even integer $2k$ for some integer $k$.
 \begin{align}
     a - b &= a + b - 2b \\ 
     &= 2k - 2b \\
@@ -192,9 +192,7 @@ Thus, if $a + b$ is even, then $a - b$ is even by HW3 fact 1.
 \end{prop}
 
 \begin{proof}
-Let $a, b$ be integers. We will show that if $ab$ is even, then $a$ or $b$ is even by proving that its negation is false. \\
-The negation of the statement is "$ab$ is even and both $a$ and $b$ is odd."//
-Let $a$ and $b$ be some odd numbers $2k + 1$ and $2l + 1$ for some integers $k, l$.
+We will prove by contradiction. Suppose for sake of contradiction that there exist some even integer $ab$ where both $a$ and $b$ are odd. By HW3 Fact 2, let $a$ and $b$ be some odd integers $2k + 1$ and $2l + 1$ for some integers $k, l$.
 \begin{align}
     ab &= (2k + 1)(2l + 1) \\
     &= 4kl + 2l + 2k + 1 \\
@@ -204,9 +202,8 @@ Let $2kl + l + k$ be some integer $m$.
 \begin{align}
     2(2kl + l + k) + 1 &= 2m + 1
 \end{align}
-This shows that if both $a$ and $b$ are odd integers, then $ab$ is odd, which contradicts the statement's negation "$ab$ is even and both $a$ and $b$ is odd." Thus, if $ab$ is even, then $a$ or $b$ is even.
+By HW3 Fact 2, this shows that if both $a$ and $b$ are odd integers then $ab$ is odd, which contradicts our initial assumption. Thus, if $ab$ is even, then $a$ or $b$ is even.
 \end{proof}
-
     
 \end{enumerate}
 \end{document}
